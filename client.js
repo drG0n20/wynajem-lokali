@@ -1,4 +1,3 @@
-<xaiArtifact artifact_id="86420fa0-eed1-4dcc-b128-23d196f68fb7" artifact_version_id="e63d5bd0-2943-418a-b368-db7a2d14771c" title="client.js" contentType="text/javascript">
 const modal = document.getElementById('contactModal');
 const modalProperty = document.getElementById('modalProperty');
 
@@ -68,4 +67,3 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         });
     });
 });
-</xaiArtifact>
