@@ -1,0 +1,157 @@
+<xaiArtifact artifact_id="072b5457-9765-4979-85c2-d2a1efe823ed" artifact_version_id="e3404675-3fd8-44cc-9b25-f9c3c3592657" title="index.html" contentType="text/html">
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Wynajem lokali komercyjnych i mieszkalnych we Wrocławiu oraz Obornikach Śląskich. Atrakcyjne oferty dla firm i osób prywatnych.">
+    <meta name="keywords" content="wynajem, lokale komercyjne, mieszkania, Wrocław, Oborniki Śląskie">
+    <meta name="author" content="Wynajem Lokali">
+    <title>Wynajem Lokali Komercyjnych i Mieszkalnych - Wrocław, Oborniki Śląskie</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Nawigacja -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">Wynajem Lokali</div>
+            <div class="nav-links">
+                <a href="#home">Strona Główna</a>
+                <a href="#oferta">Oferta</a>
+                <a href="#o-nas">O Nas</a>
+                <a href="#kontakt">Kontakt</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sekcja Hero -->
+    <section id="home" class="hero">
+        <div class="container">
+            <h1>Wynajem Lokali we Wrocławiu i Obornikach Śląskich</h1>
+            <p>Znajdź idealny lokal komercyjny lub mieszkalny dla siebie lub swojej firmy.</p>
+            <a href="#featured" class="btn">Sprawdź Dostępne Lokale</a>
+        </div>
+    </section>
+
+    <!-- Sekcja Polecane Lokale -->
+    <section id="featured" class="section">
+        <div class="container">
+            <h2>Polecane Lokale</h2>
+            <div class="property-grid">
+                <!-- Lokal 1 - Komercyjny Oborniki -->
+                <div class="property-card">
+                    <img src="https://images.unsplash.com/photo-1596176530362-4b3a8f6b852e?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60" alt="Lokal komercyjny Oborniki 1">
+                    <h3>Lokal Komercyjny 50m²</h3>
+                    <p>Oborniki Śląskie, ul. Dworcowa</p>
+                    <button onclick="openModal('Lokal Komercyjny 50m² - Oborniki Śląskie')">Zapytaj o lokal</button>
+                </div>
+                <!-- Lokal 2 - Komercyjny Oborniki -->
+                <div class="property-card">
+                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60" alt="Lokal komercyjny Oborniki 2">
+                    <h3>Lokal Komercyjny 80m²</h3>
+                    <p>Oborniki Śląskie, ul. Piłsudskiego</p>
+                    <button onclick="openModal('Lokal Komercyjny 80m² - Oborniki Śląskie')">Zapytaj o lokal</button>
+                </div>
+                <!-- Lokal 3 - Mieszkalny Wrocław -->
+                <div class="property-card">
+                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60" alt="Mieszkanie Wrocław 1">
+                    <h3>Mieszkanie 60m²</h3>
+                    <p>Wrocław, ul. Grabiszyńska</p>
+                    <button onclick="openModal('Mieszkanie 60m² - Wrocław')">Zapytaj o lokal</button>
+                </div>
+                <!-- Lokal 4 - Mieszkalny Wrocław -->
+                <div class="property-card">
+                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60" alt="Mieszkanie Wrocław 2">
+                    <h3>Mieszkanie 45m²</h3>
+                    <p>Wrocław, ul. Traugutta</p>
+                    <button onclick="openModal('Mieszkanie 45m² - Wrocław')">Zapytaj o lokal</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal Formularz Kontaktowy -->
+    <div id="contactModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">×</span>
+            <h2>Zapytaj o lokal</h2>
+            <p id="modalProperty"></p>
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="name">Imię i nazwisko</label>
+                    <input type="text" id="name" placeholder="Jan Kowalski" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="jan.kowalski@example.com">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Telefon</label>
+                    <input type="tel" id="phone" placeholder="+48 123 456 789">
+                </div>
+                <div class="form-group">
+                    <label for="message">Wiadomość</label>
+                    <textarea id="message" rows="4" placeholder="Jestem zainteresowany tym lokalem..."></textarea>
+                </div>
+                <button type="button" onclick="submitForm()">Wyślij</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Sekcja Oferta -->
+    <section id="oferta" class="section">
+        <div class="container">
+            <h2>Nasza Oferta</h2>
+            <div class="offer-grid">
+                <div class="offer-card">
+                    <img src="https://images.unsplash.com/photo-1502005229762-cf1b2da7c5d4?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60" alt="Lokal komercyjny">
+                    <h3>Lokale Komercyjne</h3>
+                    <p>Biura, sklepy i magazyny w atrakcyjnych lokalizacjach Wrocławia i Obornik Śląskich.</p>
+                    <a href="#kontakt">Dowiedz się więcej</a>
+                </div>
+                <div class="offer-card">
+                    <img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60" alt="Mieszkanie">
+                    <h3>Mieszkania</h3>
+                    <p>Komfortowe mieszkania na wynajem dla rodzin i singli w spokojnych okolicach.</p>
+                    <a href="#kontakt">Dowiedz się więcej</a>
+                </div>
+                <div class="offer-card">
+                    <img src="https://images.unsplash.com/photo-1516321497487-e288fb19713f?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60" alt="Usługi">
+                    <h3>Usługi Dodatkowe</h3>
+                    <p>Zarządzanie nieruchomościami, doradztwo i pomoc w formalnościach.</p>
+                    <a href="#kontakt">Dowiedz się więcej</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sekcja O Nas -->
+    <section id="o-nas" class="section">
+        <div class="container">
+            <h2>O Nas</h2>
+            <p>Jesteśmy doświadczoną firmą specjalizującą się w wynajmie lokali komercyjnych i mieszkalnych we Wrocławiu oraz Obornikach Śląskich. Naszym celem jest zapewnienie klientom nieruchomości spełniających ich oczekiwania.</p>
+            <p>Działamy na rynku od ponad 10 lat, oferując profesjonalną obsługę i elastyczne warunki współpracy.</p>
+        </div>
+    </section>
+
+    <!-- Sekcja Kontakt -->
+    <section id="kontakt" class="section">
+        <div class="container">
+            <h2>Skontaktuj się z nami</h2>
+            <p>Zadzwoń: <a href="tel:+48500123456">+48 500 123 456</a></p>
+            <p>Email: <a href="mailto:kontakt@wynajemlokali.pl">kontakt@wynajemlokali.pl</a></p>
+            <p>Adres: ul. Rynek 10, 50-100 Wrocław</p>
+        </div>
+    </section>
+
+    <!-- Stopka -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2025 Wynajem Lokali. Wszystkie prawa zastrzeżone.</p>
+        </div>
+    </footer>
+
+    <script src="client.js"></script>
+</body>
+</html>
+</xaiArtifact>
