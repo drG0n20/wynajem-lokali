@@ -33,7 +33,7 @@ async function submitForm() {
     const data = { name, email, phone, message, property };
 
     try {
-        const response = await fetch('https://twoj-backend-na-renderze.onrender.com/submit', {
+        const response = await fetch('https://wynajem-lokali-backend.onrender.com/submit', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
