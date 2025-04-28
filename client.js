@@ -1,3 +1,5 @@
+emailjs.init('qFTa4KsvZbC7FFHog');
+
 const modal = document.getElementById('contactModal');
 const modalProperty = document.getElementById('modalProperty');
 
