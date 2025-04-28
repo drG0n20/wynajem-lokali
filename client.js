@@ -39,7 +39,7 @@ async function submitForm() {
     };
 
     try {
-        await emailjs.send('TWÓJ_SERVICE_ID', 'TWÓJ_TEMPLATE_ID', templateParams);
+        await emailjs.send('service_9bzk2eo', 'template_a4pglud', templateParams);
         alert('Wiadomość została wysłana! Dziękujemy za kontakt.');
         closeModal();
     } catch (error) {
