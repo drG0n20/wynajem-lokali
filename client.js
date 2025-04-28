@@ -15,10 +15,10 @@ function closeModal() {
 }
 
 async function submitForm() {
-    const name = document.getElementById('name').value;
-    const email = document.getElementById('email').value;
-    const phone = document.getElementById('phone').value;
-    const message = document.getElementById('message').value;
+    const name = document.getElementById('name').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const phone = document.getElementById('phone').value.trim();
+    const message = document.getElementById('message').value.trim();
     const property = modalProperty.textContent.replace('Lokal: ', '');
 
     if (!name) {
@@ -30,26 +30,21 @@ async function submitForm() {
         return;
     }
 
-    const data = { name, email, phone, message, property };
+    const templateParams = {
+        name: name,
+        email: email,
+        phone: phone,
+        message: message,
+        property: property
+    };
 
     try {
-        const response = await fetch('https://wynajem-lokali-backend.onrender.com/submit', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify(data),
-        });
-
-        if (response.ok) {
-            alert('Wiadomość wysłana! Dziękujemy za kontakt.');
-            closeModal();
-        } else {
-            alert('Wystąpił błąd. Spróbuj ponownie.');
-        }
+        await emailjs.send('TWÓJ_SERVICE_ID', 'TWÓJ_TEMPLATE_ID', templateParams);
+        alert('Wiadomość została wysłana! Dziękujemy za kontakt.');
+        closeModal();
     } catch (error) {
-        console.error('Error:', error);
-        alert('Wystąpił błąd. Spróbuj ponownie.');
+        console.error('EmailJS error:', error);
+        alert('Wystąpił błąd podczas wysyłania wiadomości. Spróbuj ponownie.');
     }
 }
 
