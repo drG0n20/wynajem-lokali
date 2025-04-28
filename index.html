@@ -161,13 +161,17 @@
             <p>© 2025 Wynajem Lokali. Wszystkie prawa zastrzeżone.</p>
         </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
     <script type="text/javascript">
         (function () {
-            emailjs.init('qFTa4KsvZbC7FFHog');
+            emailjs.init({
+                publicKey: "qFTa4KsvZbC7FFHog",
+            });
         })();
     </script>
-    <script src="client.js"></script>
+
+    <!-- <script src="client.js"></script> -->
     <script src="client.js"></script>
 </body>
 
