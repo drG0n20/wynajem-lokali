@@ -16,6 +16,16 @@ function closeModal() {
     document.getElementById('message').value = '';
 }
 
+function isValidEmail(email) {
+    const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return re.test(email);
+}
+
+function isValidPhone(phone) {
+    const re = /^[+]?[\d\s\-().]{7,20}$/;
+    return re.test(phone);
+}
+
 async function submitForm() {
     const name = document.getElementById('name').value.trim();
     const email = document.getElementById('email').value.trim();
@@ -27,8 +37,19 @@ async function submitForm() {
         alert('Proszę podać imię i nazwisko.');
         return;
     }
+
     if (!email && !phone) {
         alert('Proszę podać email lub telefon.');
+        return;
+    }
+
+    if (email && !isValidEmail(email)) {
+        alert('Podany email jest niepoprawny.');
+        return;
+    }
+
+    if (phone && !isValidPhone(phone)) {
+        alert('Podany numer telefonu jest niepoprawny.');
         return;
     }
 
