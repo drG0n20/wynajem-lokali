@@ -233,3 +233,89 @@
     padding: 1.5rem 0;
     text-align: center;
 }
+
+gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Responsywny układ kolumn */
+    gap: 15px;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.gallery-thumbnail {
+    width: 100%;
+    height: 150px; /* Stała wysokość miniatur */
+    object-fit: cover; /* Miniatury będą wypełniać przestrzeń, bez zniekształceń */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.gallery-thumbnail:hover {
+    transform: scale(1.05); /* Efekt powiększenia przy najechaniu */
+}
+
+.lightbox {
+    display: none; /* Domyślnie ukryty */
+    position: fixed; /* Pozycja stała, aby był zawsze na wierzchu */
+    z-index: 1000; /* Upewnij się, że jest na wierzchu */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* Włącz scrollowanie, jeśli zdjęcie jest większe niż ekran */
+    background-color: rgba(0,0,0,0.9); /* Półprzezroczyste tło */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lightbox-content {
+    margin: auto;
+    display: block;
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 8px;
+}
+
+.close-button {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Media Queries dla responsywności (opcjonalnie, ale zalecane) */
+@media (max-width: 768px) {
+    .gallery-container {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+        gap: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery-container {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        gap: 8px;
+    }
+    h1 {
+        font-size: 24px;
+    }
+}
+
+
