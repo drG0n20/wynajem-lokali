@@ -1,147 +1,114 @@
+/* ─────────────────────────── RESET & BASICS ─────────────────────────── */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
+    font-family: Arial, sans-serif;
 }
-
 .container {
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
 }
 
+/* ─────────────────────────── NAVBAR ─────────────────────────── */
 .navbar {
-    background-color: #2d3748;
-    color: white;
+    background: #2d3748;
+    color: #fff;
     padding: 1rem 0;
     position: sticky;
     top: 0;
     z-index: 50;
 }
-
 .navbar .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-
-.logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-
+.logo { font-size: 1.5rem; font-weight: 700; }
 .nav-links a {
-    color: white;
+    color: inherit;
     text-decoration: none;
     margin-left: 1rem;
+    transition: color .3s;
 }
+.nav-links a:hover { color: #a0aec0; }
 
-.nav-links a:hover {
-    color: #a0aec0;
-}
-
+/* ─────────────────────────── HERO ─────────────────────────── */
 .hero {
-    background-image: url('https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
-    background-size: cover;
-    background-position: center;
+    background: url('https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=1920&q=80')
+                center/cover no-repeat;
     height: 100vh;
     display: flex;
     align-items: center;
     text-align: center;
-    color: white;
+    color: #fff;
 }
+.hero h1 { font-size: 3rem; margin-bottom: 1rem; }
+.hero p  { font-size: 1.5rem; margin-bottom: 2rem; }
 
-.hero h1 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-}
-
-.hero p {
-    font-size: 1.5rem;
-    margin-bottom: 2rem;
-}
-
-.btn {
-    background-color: #3182ce;
-    color: white;
-    padding: 0.75rem 1.5rem;
+/* ─────────────────────────── BUTTONS ─────────────────────────── */
+.btn,
+.btn-gallery,
+.btn-contact {
+    background: #3182ce;
+    color: #fff;
+    padding: .75rem 1.5rem;
+    border: none;
+    border-radius: .5rem;
+    cursor: pointer;
     text-decoration: none;
-    border-radius: 0.5rem;
-    transition: background-color 0.3s;
+    transition: background .3s;
 }
+.btn:hover,
+.btn-gallery:hover,
+.btn-contact:hover { background: #2b6cb0; }
 
-.btn:hover {
-    background-color: #2b6cb0;
-}
+/* ─────────────────────────── SECTIONS ─────────────────────────── */
+.section { padding: 4rem 0; text-align: center; }
+.section:nth-child(even) { background: #f7fafc; }
+.section h2 { font-size: 2.5rem; margin-bottom: 2rem; }
 
-.section {
-    padding: 4rem 0;
-    text-align: center;
-}
-
-.section:nth-child(even) {
-    background-color: #f7fafc;
-}
-
-.section h2 {
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
-}
-
-.property-grid, .offer-grid {
+/* ─────────────────────────── PROPERTY / OFFER CARDS ─────────────────────────── */
+.property-grid,
+.offer-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
     gap: 2rem;
 }
-
-.property-card, .offer-card {
-    background-color: white;
+.property-card,
+.offer-card {
+    background: #fff;
     padding: 1.5rem;
-    border-radius: 0.5rem;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: .5rem;
+    box-shadow: 0 2px 10px rgba(0,0,0,.1);
+    text-align: left;
 }
 
-.property-card img, .offer-card img {
+/* główne zdjęcie karty */
+.property-cover-image,
+.offer-card img {
     width: 100%;
-    height: 200px;
+    height: 250px;
     object-fit: cover;
-    border-radius: 0.5rem;
+    border-radius: .5rem;
     margin-bottom: 1rem;
+    transition: transform .3s ease;
+}
+.property-cover-image:hover { transform: scale(1.02); }
+
+/* tytuł / opis */
+.property-card h3, .offer-card h3 { font-size: 1.25rem; margin-bottom: .5rem; }
+.property-card p,  .offer-card p  { color: #718096; margin-bottom: 1rem; }
+
+/* przyciski w karcie */
+.property-actions {
+    display: flex;
+    gap: .5rem;
+    flex-wrap: wrap;
 }
 
-.property-card h3, .offer-card h3 {
-    font-size: 1.25rem;
-    margin-bottom: 0.5rem;
-}
-
-.property-card p, .offer-card p {
-    color: #718096;
-    margin-bottom: 1rem;
-}
-
-.property-card button {
-    background-color: #3182ce;
-    color: white;
-    padding: 0.5rem 1rem;
-    border: none;
-    border-radius: 0.5rem;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.property-card button:hover {
-    background-color: #2b6cb0;
-}
-
-.offer-card a {
-    color: #3182ce;
-    text-decoration: none;
-}
-
-.offer-card a:hover {
-    text-decoration: underline;
-}
+/* ─────────────────────────── MODAL KONTAKT ─────────────────────────── */
 
 .modal {
     display: none;
@@ -188,134 +155,157 @@
     margin-bottom: 1rem;
 }
 
+#contactForm {
+    display: block;
+    width: 100%;
+}
+
 .form-group {
     margin-bottom: 1rem;
-    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
 }
 
 .form-group label {
-    display: block;
-    font-size: 0.875rem;
-    font-weight: medium;
-    color: #4a5568;
     margin-bottom: 0.25rem;
+    font-weight: bold;
 }
 
 .form-group input,
 .form-group textarea {
-    width: 100%;
-    padding: 0.5rem;
+    padding: 0.75rem;
     border: 1px solid #e2e8f0;
-    border-radius: 0.25rem;
+    border-radius: 0.375rem;
+    font-size: 1rem;
+    width: 100%;
+    box-sizing: border-box;
 }
 
-.form-group textarea {
+ .form-group textarea {
     resize: vertical;
-}
+} 
 
-#contactForm button {
+.form-group button {
     background-color: #3182ce;
     color: white;
-    padding: 0.5rem 1rem;
+    padding: 0.75rem 1.5rem;
     border: none;
     border-radius: 0.5rem;
+    font-size: 1rem;
     cursor: pointer;
-    transition: background-color 0.3s;
+    align-self: flex-start; /* opcjonalnie: wyrównanie do lewej */
 }
 
-#contactForm button:hover {
+.form-group button:hover {
     background-color: #2b6cb0;
 }
 
+/* ─────────────────────────── MODAL KONTAKT ─────────────────────────── */
+/* .modal {
+    display: flex;
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background: rgba(0,0,0,.5);
+    z-index: 60;
+}
+.modal-content {
+    background: #fff;
+    margin: 10% auto;
+    padding: 2rem;
+    max-width: 500px;
+    border-radius: .5rem;
+    position: relative;
+}
+.close {
+    position: absolute;
+    top: .75rem; right: 1rem;
+    font-size: 1.75rem; font-weight: 700;
+    color: #aaa; cursor: pointer;
+    transition: color .3s;
+}
+.close:hover { color: #000; } */
+
+
+
+
+/* ─────────────────────────── LIGHTBOX ─────────────────────────── */
+.lightbox {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,.9);
+    backdrop-filter: blur(5px);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+.lightbox-content-wrapper {
+    max-width: 90vw;
+    max-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+.lightbox-main-image {
+    max-width: 90vw;
+    max-height: 70vh;
+    object-fit: contain;
+    border: 2px solid #fff;
+    border-radius: .5rem;
+}
+.close-button,
+.prev-button,
+.next-button {
+    position: absolute;
+    color: #fff; font-size: 2rem;
+    background: none; border: none;
+    cursor: pointer; user-select: none;
+}
+.close-button { top: 1rem; right: 2rem; font-size: 2.5rem; }
+.prev-button  { left: 1rem;  top: 50%; transform: translateY(-50%); }
+.next-button  { right: 1rem; top: 50%; transform: translateY(-50%); }
+
+.lightbox-thumbnails {
+    display: flex;
+    gap: .5rem;
+    margin-top: .5rem;
+    overflow-x: auto;
+    padding-bottom: .25rem;
+}
+.lightbox-thumbnail {
+    width: 80px; height: 60px;
+    object-fit: cover;
+    opacity: .6;
+    border: 2px solid transparent;
+    border-radius: .25rem;
+    cursor: pointer;
+    transition: opacity .3s, border .3s;
+}
+.lightbox-thumbnail:hover,
+.lightbox-thumbnail.active {
+    opacity: 1;
+    border-color: #fff;
+}
+
+/* ─────────────────────────── RESPONSYWNOŚĆ ─────────────────────────── */
+@media (max-width: 768px) {
+    .hero h1 { font-size: 2rem; }
+    .hero p  { font-size: 1.2rem; }
+    .section h2 { font-size: 2rem; }
+    .property-grid, .offer-grid { grid-template-columns: 1fr; }
+    .modal-content { margin: 15% 1rem; width: auto; }
+    .lightbox-main-image { max-height: 60vh; }
+}
+
+/* ─────────────────────────── STOPKA ─────────────────────────── */
 .footer {
-    background-color: #2d3748;
-    color: white;
+    background: #2d3748;
+    color: #fff;
     padding: 1.5rem 0;
     text-align: center;
 }
-
-gallery-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Responsywny układ kolumn */
-    gap: 15px;
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 10px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
-
-.gallery-thumbnail {
-    width: 100%;
-    height: 150px; /* Stała wysokość miniatur */
-    object-fit: cover; /* Miniatury będą wypełniać przestrzeń, bez zniekształceń */
-    border-radius: 5px;
-    cursor: pointer;
-    transition: transform 0.2s ease-in-out;
-}
-
-.gallery-thumbnail:hover {
-    transform: scale(1.05); /* Efekt powiększenia przy najechaniu */
-}
-
-.lightbox {
-    display: none; /* Domyślnie ukryty */
-    position: fixed; /* Pozycja stała, aby był zawsze na wierzchu */
-    z-index: 1000; /* Upewnij się, że jest na wierzchu */
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto; /* Włącz scrollowanie, jeśli zdjęcie jest większe niż ekran */
-    background-color: rgba(0,0,0,0.9); /* Półprzezroczyste tło */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.lightbox-content {
-    margin: auto;
-    display: block;
-    max-width: 90%;
-    max-height: 90%;
-    border-radius: 8px;
-}
-
-.close-button {
-    position: absolute;
-    top: 20px;
-    right: 35px;
-    color: #fff;
-    font-size: 40px;
-    font-weight: bold;
-    transition: 0.3s;
-    cursor: pointer;
-}
-
-.close-button:hover,
-.close-button:focus {
-    color: #bbb;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-/* Media Queries dla responsywności (opcjonalnie, ale zalecane) */
-@media (max-width: 768px) {
-    .gallery-container {
-        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-        gap: 10px;
-    }
-}
-
-@media (max-width: 480px) {
-    .gallery-container {
-        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-        gap: 8px;
-    }
-    h1 {
-        font-size: 24px;
-    }
-}
-
-
