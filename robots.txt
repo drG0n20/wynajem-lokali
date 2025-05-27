@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://www.lokale-oborniki.pl/sitemap.xml
+
