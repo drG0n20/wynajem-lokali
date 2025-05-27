@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Wynajem lokali komercyjnych i mieszkalnych we Wrocławiu oraz Obornikach Śląskich. Atrakcyjne oferty dla firm i osób prywatnych.">
+    <meta name="keywords" content="wynajem, lokale komercyjne, mieszkania, Wrocław, Oborniki Śląskie">
+    <meta name="author" content="Wynajem Lokali">
+    <title>Wynajem Lokali Komercyjnych i Mieszkalnych - Wrocław, Oborniki Śląskie</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Nawigacja -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">Wynajem Lokali</div>
+            <div class="nav-links">
+                <a href="#home">Strona Główna</a>
+                <a href="#featured">Lokale</a>
+                <a href="#oferta">Oferta</a>
+                <a href="#o-nas">O Nas</a>
+                <a href="#kontakt">Kontakt</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sekcja Hero -->
+    <section id="home" class="hero">
+        <div class="container">
+            <h1>Wynajem Lokali we Wrocławiu i Obornikach Śląskich</h1>
+            <p>Znajdź idealny lokal komercyjny lub mieszkalny dla siebie lub swojej firmy.</p>
+            <a href="#featured" class="btn">Sprawdź Dostępne Lokale</a>
+        </div>
+    </section>
+
+    <!-- Sekcja Polecane Lokale -->
+    <section id="featured" class="section">
+        <div class="container">
+            <h2>Polecane Lokale</h2>
+            <div class="property-grid">
+                <!-- Lokal 1 - Komercyjny Oborniki -->
+                <div class="property-card">
+                    <!-- <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60"
+                        alt="Lokal komercyjny Oborniki 1"> -->
+
+                    <div class="gallery-container">
+                        <img src="images/zdjecie01.jpg" alt="Opis zdjęcia 01" class="gallery-thumbnail">
+                        <img src="images/zdjecie02.jpg" alt="Opis zdjęcia 02" class="gallery-thumbnail">
+                        <img src="images/zdjecie03.jpg" alt="Opis zdjęcia 03" class="gallery-thumbnail">
+                        <img src="images/zdjecie04.jpg" alt="Opis zdjęcia 04" class="gallery-thumbnail">
+                        <img src="images/zdjecie05.jpg" alt="Opis zdjęcia 05" class="gallery-thumbnail">
+                        <img src="images/zdjecie06.jpg" alt="Opis zdjęcia 06" class="gallery-thumbnail">
+                        <img src="images/zdjecie07.jpg" alt="Opis zdjęcia 07" class="gallery-thumbnail">
+                        <img src="images/zdjecie08.jpg" alt="Opis zdjęcia 08" class="gallery-thumbnail">
+                        <img src="images/zdjecie09.jpg" alt="Opis zdjęcia 09" class="gallery-thumbnail">
+                        <img src="images/zdjecie10.jpg" alt="Opis zdjęcia 10" class="gallery-thumbnail">
+                        <img src="images/zdjecie11.jpg" alt="Opis zdjęcia 11" class="gallery-thumbnail">
+                        <img src="images/zdjecie12.jpg" alt="Opis zdjęcia 12" class="gallery-thumbnail">
+                        <img src="images/zdjecie13.jpg" alt="Opis zdjęcia 13" class="gallery-thumbnail">
+                        <img src="images/zdjecie14.jpg" alt="Opis zdjęcia 14" class="gallery-thumbnail">
+                        <img src="images/zdjecie15.jpg" alt="Opis zdjęcia 15" class="gallery-thumbnail">
+                        <img src="images/zdjecie16.jpg" alt="Opis zdjęcia 16" class="gallery-thumbnail">
+                        <img src="images/zdjecie17.jpg" alt="Opis zdjęcia 17" class="gallery-thumbnail">
+                    </div>
+
+                    <div id="lightbox" class="lightbox">
+                        <span class="close-button">&times;</span>
+                        <img class="lightbox-content" id="lightbox-img">
+                    </div>
+                    <h3>Lokal Komercyjny 50m²</h3>
+                    <p>Oborniki Śląskie, ul. Skłodowskiej 28</p>
+                    <button onclick="openModal('Lokal Komercyjny 50m² - Oborniki Śląskie')">Zapytaj o lokal</button>
+                </div>
+                <!-- Lokal 2 - Komercyjny Oborniki -->
+                <!-- <div class="property-card">
+                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60"
+                        alt="Lokal komercyjny Oborniki 2">
+                    <h3>Lokal Komercyjny 80m²</h3>
+                    <p>Oborniki Śląskie, ul. Skłodowskiej 28</p>
+                    <button onclick="openModal('Lokal Komercyjny 80m² - Oborniki Śląskie')">Zapytaj o lokal</button>
+                </div> -->
+                <!-- Lokal 3 - Mieszkalny Wrocław -->
+                <!-- <div class="property-card">
+                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60"
+                        alt="Mieszkanie Wrocław 1">
+                    <h3>Mieszkanie 37m²</h3>
+                    <p>Wrocław, ul. Braniborska 10e</p>
+                    <button onclick="openModal('Braniborska - Wrocław')">Zapytaj o lokal</button>
+                </div> -->
+                <!-- Lokal 4 - Mieszkalny Wrocław -->
+                <!-- <div class="property-card">
+                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60"
+                        alt="Mieszkanie Wrocław 2">
+                    <h3>Mieszkanie 45m²</h3>
+                    <p>Wrocław, ul. Białowieska 127</p>
+                    <button onclick="openModal('Białowieska - Wrocław')">Zapytaj o lokal</button>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal Formularz Kontaktowy -->
+    <div id="contactModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">×</span>
+            <h2>Zapytaj o lokal</h2>
+            <p id="modalProperty"></p>
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="name">Imię i nazwisko</label>
+                    <input type="text" id="name" placeholder="Jan Kowalski" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="jan.kowalski@example.com">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Telefon</label>
+                    <input type="tel" id="phone" placeholder="+48 123 456 789">
+                </div>
+                <div class="form-group">
+                    <label for="message">Wiadomość</label>
+                    <textarea id="message" rows="4" placeholder="Jestem zainteresowany tym lokalem..."></textarea>
+                </div>
+                <button type="button" onclick="submitForm()">Wyślij</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Sekcja Oferta -->
+    <section id="oferta" class="section">
+        <div class="container">
+            <h2>Nasza Oferta</h2>
+            <div class="offer-grid">
+                <div class="offer-card">
+                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60"
+                        alt="Lokal komercyjny">
+                    <h3>Lokale Komercyjne</h3>
+                    <p>Biura, sklepy i magazyny w atrakcyjnych lokalizacjach Wrocławia i Obornik Śląskich.</p>
+                    <a href="#kontakt">Dowiedz się więcej</a>
+                </div>
+                <div class="offer-card">
+                    <img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60"
+                        alt="Mieszkanie">
+                    <h3>Mieszkania</h3>
+                    <p>Komfortowe mieszkania na wynajem dla rodzin i singli w spokojnych okolicach.</p>
+                    <a href="#kontakt">Dowiedz się więcej</a>
+                </div>
+                <div class="offer-card">
+                    <img src="https://images.unsplash.com/photo-1516321497487-e288fb19713f?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60"
+                        alt="Usługi">
+                    <h3>Usługi Dodatkowe</h3>
+                    <p>Zarządzanie nieruchomościami, doradztwo i pomoc w formalnościach.</p>
+                    <a href="#kontakt">Dowiedz się więcej</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sekcja O Nas -->
+    <section id="o-nas" class="section">
+        <div class="container">
+            <h2>O Nas</h2>
+            <p>Jesteśmy doświadczoną firmą specjalizującą się w wynajmie lokali komercyjnych i mieszkalnych we Wrocławiu
+                oraz Obornikach Śląskich. Naszym celem jest zapewnienie klientom nieruchomości spełniających ich
+                oczekiwania.</p>
+            <p>Działamy na rynku od ponad 10 lat, oferując profesjonalną obsługę i elastyczne warunki współpracy.</p>
+        </div>
+    </section>
+
+    <!-- Sekcja Kontakt -->
+    <section id="kontakt" class="section">
+        <div class="container">
+            <h2>Skontaktuj się z nami</h2>
+            <p>Zadzwoń: <a href="tel:+48500123456">+48 500 123 456</a></p>
+            <p>Email: <a href="mailto:kontakt@wynajemlokali.pl">kontakt@wynajemlokali.pl</a></p>
+            <p>Adres: ul. Skłodowskiej 28, Oborniki Śląskie</p>
+    </section>
+
+    <!-- Stopka -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2025 Wynajem Lokali. Wszystkie prawa zastrzeżone.</p>
+        </div>
+    </footer>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init({
+                publicKey: "qFTa4KsvZbC7FFHog",
+            });
+        })();
+    </script>
+
+    <!-- <script src="client.js"></script> -->
+    <script src="client.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
