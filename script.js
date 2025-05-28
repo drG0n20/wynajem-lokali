@@ -2,14 +2,14 @@
 const galleryImages = [
     // Lokal 1 – Oborniki Śląskie
     [
-        'images/lokal1/zdjecie01.jpg', 'images/lokal1/zdjecie02.jpg', 'images/lokal1/zdjecie03.jpg',
-        'images/lokal1/zdjecie04.jpg', 'images/lokal1/zdjecie05.jpg', 'images/lokal1/zdjecie06.jpg',
-        'images/lokal1/zdjecie07.jpg', 'images/lokal1/zdjecie08.jpg', 'images/lokal1/zdjecie09.jpg',
-        'images/lokal1/zdjecie10.jpg', 'images/lokal1/zdjecie11.jpg', 'images/lokal1/zdjecie12.jpg',
-        'images/lokal1/zdjecie13.jpg', 'images/lokal1/zdjecie14.jpg', 'images/lokal1/zdjecie15.jpg',
-        'images/lokal1/zdjecie16.jpg', 'images/lokal1/zdjecie17.jpg'
+        'images/lokal1/zdjecie01.webp', 'images/lokal1/zdjecie02.webp', 'images/lokal1/zdjecie03.webp',
+        'images/lokal1/zdjecie04.webp', 'images/lokal1/zdjecie05.webp', 'images/lokal1/zdjecie06.webp',
+        'images/lokal1/zdjecie07.webp', 'images/lokal1/zdjecie08.webp', 'images/lokal1/zdjecie09.webp',
+        'images/lokal1/zdjecie10.webp', 'images/lokal1/zdjecie11.webp', 'images/lokal1/zdjecie12.webp',
+        'images/lokal1/zdjecie13.webp', 'images/lokal1/zdjecie14.webp', 'images/lokal1/zdjecie15.webp',
+        'images/lokal1/zdjecie16.webp', 'images/lokal1/zdjecie17.webp'
     ],
-    // Lokal 2 – Wrocław
+    // Lokal 2 – Wrocław
     // [
     //     'images/lokal2/01.JPG', 'images/lokal2/02.JPG',
     //     'images/lokal2/03.JPG', 'images/lokal2/04.JPG',
