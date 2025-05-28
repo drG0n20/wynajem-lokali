@@ -10,11 +10,11 @@ const galleryImages = [
         'images/lokal1/zdjecie16.jpg', 'images/lokal1/zdjecie17.jpg'
     ],
     // Lokal 2 – Wrocław
-    [
-        'images/lokal2/01.JPG', 'images/lokal2/02.JPG',
-        'images/lokal2/03.JPG', 'images/lokal2/04.JPG',
-        'images/lokal2/05.JPG', 'images/lokal2/06.JPG',
-    ]
+    // [
+    //     'images/lokal2/01.JPG', 'images/lokal2/02.JPG',
+    //     'images/lokal2/03.JPG', 'images/lokal2/04.JPG',
+    //     'images/lokal2/05.JPG', 'images/lokal2/06.JPG',
+    // ]
 ];
 
 let currentGalleryIndex = 0;
@@ -23,7 +23,6 @@ let currentImageIndex   = 0;
 const galleryLightbox            = document.getElementById('galleryLightbox');
 const lightboxMainImage          = document.getElementById('lightboxMainImage');
 const lightboxThumbnailsContainer= document.getElementById('lightboxThumbnails');
-
 
 /* ---------- GALERIA ---------- */
 function openGallery(galleryId) {
@@ -61,11 +60,27 @@ function createThumbnails() {
 galleryLightbox.addEventListener('click', e => {
     if (e.target === galleryLightbox) closeGallery();
 });
+
 /* Nawigacja klawiaturą */
 document.addEventListener('keydown', e => {
     if (galleryLightbox.style.display === 'flex') {
         if (e.key === 'Escape') closeGallery();
         if (e.key === 'ArrowLeft')  changeImage(-1);
         if (e.key === 'ArrowRight') changeImage(1);
+    }
+});
+
+function toggleMenu() {
+    const menu = document.querySelector(".nav-links");
+    menu.style.display = menu.style.display === "block" ? "none" : "block";
+}
+
+/* Nasłuchiwanie zmiany rozmiaru ekranu */
+window.addEventListener("resize", function() {
+    const menu = document.querySelector(".nav-links");
+    if (window.innerWidth > 768) {
+        menu.style.display = "flex"; /* Przywraca normalne menu na dużym ekranie */
+    } else {
+        menu.style.display = "none"; /* Ukrywa menu na małych ekranach */
     }
 });
