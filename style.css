@@ -161,16 +161,16 @@ ul {
 
 /* ─────────────────────────── PROPERTY / OFFER CARDS ─────────────────────────── */
 .property-grid{
-    display: flex;
-    flex-direction: row;
-    /* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); */
-    /* gap: 2rem; */
+    display: grid;
+    /* flex-direction: row; */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
   /* justify-content: space-evenly;  */
-  align-items: center;   /* Centruje elementy pionowo w kontenerze */
-  min-height: 100vh;     /* Zapewnia, że body ma przynajmniej wysokość całego widoku przeglądarki */
-  margin: 0;             /* Usuwa domyślne marginesy body */
-  flex-wrap: wrap;       /* Pozwala elementom zawijać się w nowe wiersze, jeśli brakuje miejsca */
-  gap: 20px; 
+  /*align-items: center;    
+  min-height: 100vh;     
+  margin: 0;             
+    flex-wrap: wrap;       
+  gap: 20px;  */
 }
 
 .offer-grid {

@@ -10,11 +10,17 @@ const galleryImages = [
         'images/lokal1/zdjecie16.webp', 'images/lokal1/zdjecie17.webp'
     ],
     // Lokal 2 – Wrocław
-    // [
-    //     'images/lokal2/01.JPG', 'images/lokal2/02.JPG',
-    //     'images/lokal2/03.JPG', 'images/lokal2/04.JPG',
-    //     'images/lokal2/05.JPG', 'images/lokal2/06.JPG',
-    // ]
+    [
+        'images/lokal2/01.jpg', 'images/lokal2/02.jpg',
+        'images/lokal2/03.jpg', 'images/lokal2/04.jpg',
+        'images/lokal2/05.jpg', 'images/lokal2/06.jpg',
+    ],
+    // Lokal 3 – Wrocław
+    [
+        'images/motocykl/image.webp', 'images/motocykl/02.jpg',
+        'images/motocykl/03.jpg', 'images/motocykl/04.jpg',
+        'images/motocykl/05.jpg', 'images/motocykl/01.jpg',
+    ]
 ];
 
 let currentGalleryIndex = 0;
