@@ -9,17 +9,18 @@ const galleryImages = [
         'images/lokal1/zdjecie13.webp', 'images/lokal1/zdjecie14.webp', 'images/lokal1/zdjecie15.webp',
         'images/lokal1/zdjecie16.webp', 'images/lokal1/zdjecie17.webp'
     ],
-    // Lokal 2 – Wrocław
+    // Lokal 2 – Oborniki
     [
-        'images/lokal2/01.jpg', 'images/lokal2/02.jpg',
-        'images/lokal2/03.jpg', 'images/lokal2/04.jpg',
-        'images/lokal2/05.jpg', 'images/lokal2/06.jpg',
+        'images/lokal2/01.webp', 'images/lokal2/02.webp',
+        'images/lokal2/03.webp', 'images/lokal2/04.webp',
+        'images/lokal2/05.webp', 'images/lokal2/06.webp',
+        'images/lokal2/07.webp',
     ],
-    // Lokal 3 – Wrocław
+    // Motocykl Oborniki
     [
-        'images/motocykl/image.webp', 'images/motocykl/02.jpg',
-        'images/motocykl/03.jpg', 'images/motocykl/04.jpg',
-        'images/motocykl/05.jpg', 'images/motocykl/01.jpg',
+        'images/motocykl/image.webp', 'images/motocykl/02.webp',
+        'images/motocykl/03.webp', 'images/motocykl/04.webp',
+        'images/motocykl/05.webp', 'images/motocykl/01.webp',
     ]
 ];
 
