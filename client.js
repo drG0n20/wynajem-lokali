@@ -5,7 +5,7 @@ const modalProperty = document.getElementById('modalProperty');
 
 function openModal(propertyName) {
     modal.style.display = 'block';
-    modalProperty.textContent = `Lokal: ${propertyName}`;
+    modalProperty.textContent = `${propertyName}`;
 }
 
 function closeModal() {
