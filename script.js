@@ -2,25 +2,21 @@
 const galleryImages = [
     // Lokal 1 – Oborniki Śląskie
     [
-        'images/lokal1/zdjecie01.webp', 'images/lokal1/zdjecie02.webp', 'images/lokal1/zdjecie03.webp',
-        'images/lokal1/zdjecie04.webp', 'images/lokal1/zdjecie05.webp', 'images/lokal1/zdjecie06.webp',
-        'images/lokal1/zdjecie07.webp', 'images/lokal1/zdjecie08.webp', 'images/lokal1/zdjecie09.webp',
-        'images/lokal1/zdjecie10.webp', 'images/lokal1/zdjecie11.webp', 'images/lokal1/zdjecie12.webp',
-        'images/lokal1/zdjecie13.webp', 'images/lokal1/zdjecie14.webp', 'images/lokal1/zdjecie15.webp',
-        'images/lokal1/zdjecie16.webp', 'images/lokal1/zdjecie17.webp'
+        'images/lokal1/01.webp', 'images/lokal1/02.webp',
+        'images/lokal1/03.webp'
     ],
-    // Lokal 2 – Oborniki
+    // Lokal 2 – Oborniki Śląskie
     [
         'images/lokal2/01.webp', 'images/lokal2/02.webp',
-        'images/lokal2/03.webp', 'images/lokal2/04.webp',
-        'images/lokal2/05.webp', 'images/lokal2/06.webp',
-        'images/lokal2/07.webp',
+        'images/lokal2/03.webp', 'images/lokal2/04.webp'
     ],
-    // Motocykl Oborniki
+    // Motocykl - Oborniki Śląskie
     [
-        'images/motocykl/image.webp', 'images/motocykl/02.webp',
+        'images/motocykl/06.webp', 'images/motocykl/02.webp',
         'images/motocykl/03.webp', 'images/motocykl/04.webp',
         'images/motocykl/05.webp', 'images/motocykl/01.webp',
+        'images/motocykl/07.webp', 'images/motocykl/08.webp',
+        'images/motocykl/09.webp'
     ]
 ];
 
