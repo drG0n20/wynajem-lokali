@@ -5,10 +5,18 @@ const galleryImages = [
         'images/lokal1/01.webp', 'images/lokal1/02.webp',
         'images/lokal1/03.webp'
     ],
+    
     // Lokal 2 – Oborniki Śląskie
     [
         'images/lokal2/01.webp', 'images/lokal2/02.webp',
         'images/lokal2/03.webp', 'images/lokal2/04.webp'
+    ],
+    // Domek – Oborniki Śląskie
+    [
+        'images/domek/01.webp', 'images/domek/02.webp',
+        'images/domek/03.webp', 'images/domek/04.webp',
+        'images/domek/05.webp', 'images/domek/06.webp',
+        'images/domek/07.webp', 'images/domek/08.webp'
     ],
     // Motocykl - Oborniki Śląskie
     [
@@ -17,6 +25,10 @@ const galleryImages = [
         'images/motocykl/05.webp', 'images/motocykl/01.webp',
         'images/motocykl/07.webp', 'images/motocykl/08.webp',
         'images/motocykl/09.webp'
+    ],
+    // Drzwi aluminiowe z ościeżnicą - Oborniki Śląskie
+    [
+        'images/drzwi/01.webp'
     ]
 ];
 
