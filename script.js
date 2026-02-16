@@ -26,9 +26,12 @@ const galleryImages = [
         'images/motocykl/07.webp', 'images/motocykl/08.webp',
         'images/motocykl/09.webp'
     ],
-    // Drzwi aluminiowe z ościeżnicą - Oborniki Śląskie
+    // Lokal 4
     [
-        'images/drzwi/01.webp'
+        'images/lokal4/01.webp', 'images/lokal4/02.webp',
+        'images/lokal4/03.webp', 'images/lokal4/04.webp',
+        'images/lokal4/05.webp', 'images/lokal4/06.webp',
+        'images/lokal4/07.webp'
     ]
 ];
 
