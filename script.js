@@ -1,12 +1,17 @@
 /* ---------- GALERIA ZDJĘĆ ---------- */
 const galleryImages = [
-    // Lokal 1 – Oborniki Śląskie
+    // Lokal 0 – 14m2 Oborniki Śląskie
     [
         'images/lokal1/01.webp', 'images/lokal1/02.webp',
         'images/lokal1/03.webp'
     ],
+
+    // Lokal 1 - 25m2 komora
+    [
+        'images/komora/01.webp','images/komora/03.webp'
+    ],
     
-    // Lokal 2 – Oborniki Śląskie
+    // Lokal 2 – 49m2 Oborniki Śląskie
     [
         'images/lokal2/01.webp', 'images/lokal2/02.webp',
         'images/lokal2/03.webp', 'images/lokal2/04.webp'
