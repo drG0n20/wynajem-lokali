@@ -6,9 +6,9 @@ const galleryImages = [
         'images/lokal1/03.webp'
     ],
 
-    // Lokal 1 - 25m2 komora
+    // Lokal 1 - 54m2
     [
-        'images/komora/01.webp','images/komora/03.webp'
+        'images/lokal1/01.webp'
     ],
     
     // Lokal 2 – 49m2 Oborniki Śląskie
